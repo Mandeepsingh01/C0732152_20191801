@@ -16,10 +16,25 @@ namespace week2
                 StudentInformation _Mark = new StudentInformation("Mark", 0.2, 3);
                 StudentInformation _steve = new StudentInformation("Steve", 2.9, 16);
                 StudentInformation _Cindy = new StudentInformation("Cindy", 2.8, 18);
+
+            var studentlist = new List<StudentInformation>();
+            studentlist.Add(_Mary);
+            studentlist.Add(_John);
+            studentlist.Add(_Mark);
+            studentlist.Add(_steve);
+            studentlist.Add(_Cindy);
+            foreach (var student in studentlist)
+            {
+                Console.WriteLine(student.NAME);
+            }
             }
         }
 
+
+
         class StudentInformation
+
+       
         {
             public string NAME;
             public string StudentNumber;
